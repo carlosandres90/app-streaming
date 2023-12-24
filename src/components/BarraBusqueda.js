@@ -8,10 +8,11 @@ export const BarraBusqueda = () => {
     const { peliculas } = useContext(PeliculasContexto);    
     const [q, setQ] = useState("");
 
-    function buscar(items) {
-        return items.filter((item) => {
-            if (item.nombre === q) {
-                return item
+    function buscar(peliculas) {
+        console.log(peliculas);
+        return peliculas.filter((pelicula) => {
+            if (pelicula.nombre === q) {
+                return pelicula
             }
             else
                 return false
@@ -35,12 +36,12 @@ export const BarraBusqueda = () => {
                     </label>                   
             </div>            
             <div className="contenedor_informacion" >
-                {buscar(peliculas).map((item) => (
+                {buscar(peliculas).map((pelicula) => (
                     <div>
                         <div className='informacion__contenido--trailer'>
-                            <h1>{item.nombre}</h1>
+                            <h1>{pelicula.nombre}</h1>
                             <iframe width="860" height="515" 
-                            src={item.urlTrailer} 
+                            src={pelicula.urlTrailer} 
                             title="YouTube video player" frameborder="0" 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                             allowfullscreen></iframe>
@@ -48,15 +49,15 @@ export const BarraBusqueda = () => {
                         </div>
                         <div className='informacion__contenido'>
                             <h1 className="contenido__titulo">Información</h1>
-                            <h3 className="contenido__subtitulo">Nombre: {item.nombre}</h3>
-                            <h3 className="contenido__subtitulo">Director: {item.director}</h3>
-                            <h3 className="contenido__subtitulo">Año publicación: {item.añoPublicacion}</h3>
-                            <h3 className="contenido__subtitulo">Duración: {item.duracion}</h3>
-                            <h3 className="contenido__subtitulo">Críticas: {item.criticas}</h3>
+                            <h3 className="contenido__subtitulo">Nombre: {pelicula.nombre}</h3>
+                            <h3 className="contenido__subtitulo">Director: {pelicula.director}</h3>
+                            <h3 className="contenido__subtitulo">Año publicación: {pelicula.añoPublicacion}</h3>
+                            <h3 className="contenido__subtitulo">Duración: {pelicula.duracion}</h3>
+                            <h3 className="contenido__subtitulo">Críticas: {pelicula.criticas}</h3>
                         </div>
                         <div className='informacion__contenido--sinopsis'>
                             <h1 className="contenido__titulo">Sinopsis</h1>
-                            <h3 className="contenido__subtitulo">{item.sinopsis}</h3>
+                            <h3 className="contenido__subtitulo">{pelicula.sinopsis}</h3>
                         </div>
                     </div>
                 ))
