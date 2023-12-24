@@ -1,0 +1,17 @@
+.contenedor__peliculas {
+    background-color: #333;
+    height: 100%;
+    position: static;
+    padding: 30px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 70px;
+}
+
+.contenedor__peliculas > * {
+    flex: 1 1 18%; 
+    max-width: 18%; 
+    margin: 5px; 
+}

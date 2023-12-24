@@ -1,0 +1,9 @@
+.confirmacion__titulo {
+    color: wheat;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bolder;
+    top: 47%;
+    position: absolute;
+    left: 37%;
+}

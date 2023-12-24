@@ -1,0 +1,15 @@
+.contador {
+    width: 20%;
+    margin-top: -600px;
+    margin-left: 40%;
+    padding-right: 2.5%;
+}
+
+.dias__titulo {
+    color: wheat;
+}
+.contador__boton {
+    display: flexbox;
+    margin: 5px;
+    width: 90px;
+}
