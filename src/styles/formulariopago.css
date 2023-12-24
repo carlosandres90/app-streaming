@@ -2,24 +2,21 @@
 
 .tarjeta__titulo {
     color: wheat;
-    font-family: Arial, Helvetica, sans-serif !important;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
+    font-size: xx-large;
 }
 
 
 .formulario__grupo--boton {
-    display: inline-block;
-    margin: 0 auto;
-    width: 50%;
+    width: 120px;
     color: wheat;
     border: .12em solid gray;
     border-radius: .5em;
     text-transform: uppercase;
-    text-align: center;
-    font-size: 1.3em;
-    line-height: 2em;
+    font-size: large !important;
     background-color: #555555;
-    font-size: 25px;
+    
 }
 
 button:hover {
@@ -29,64 +26,50 @@ button:hover {
 }
 
 .formulario__imagen {
-    left: 20%;
-    position: absolute;
-    height: 70%;
+    margin-left: -900px;
+    width: 25%;
+    border-radius: 30px;
+    
 }
 
 .formulario__tarjeta {
-    font-family: Arial, Helvetica, sans-serif !important;
-    font-size: x-large !important;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
 	width: 100%;
-	max-width: 700px;
-	padding: 50px;
-	border-radius: 10px;
-	position: inherit;
-	z-index: 1;
-	transition: clip-path .3s ease-out; 
+	max-width: 400px;
+    max-height: 700px;
+	padding: 10px;
+	border-radius: 30px;
     background-image: url("../assests/logo003.png");
-    margin-left: 55%;
+    margin-left: 60%;
     background-color: #571111;
     box-shadow: 0 0 10px rgba(231, 216, 216, 0.1);    
-    border-left-style: solid;
-    border-left-width: 0px;
-    margin-top: 80px;
-    width: fit-content;
+    position: initial;
+    margin-top: -530px;
+    
 }
 
 .formulario__tarjeta label {
 	display: block;
 	color: #7d8994;
 	margin-bottom: 5px;
-	font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif !important;
-    font-size: x-large !important;
+	font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
 }
 
 .formulario__tarjeta input,
 .btn-enviar {
 	border: 2px solid #CED6E0;
 	font-size: 18px;
-	height: 50px;
+	height: 40%;
 	width: 100%;
 	padding: 5px 12px;
-	transition: .3s ease all;
-	border-radius: 5px;
-}
-
-.formulario__tarjeta input:hover,
-.formulario__tarjeta select:hover {
-	border: 2px solid #93BDED;
-}
-
-.formulario__tarjeta input:focus,
-.formulario__tarjeta select:focus {
-	outline: rgb(4,4,4);
-	box-shadow: 1px 7px 10px -5px rgba(90,116,148,0.3);
+	border-radius: 10px;
 }
 
 .formulario__tarjeta input {
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 	text-transform: uppercase;
 }
 
@@ -97,8 +80,4 @@ button:hover {
 
 .grupo__expira {
 	width: 100%;
-}
-
-.formulario__tarjeta {
-	min-width: 100px;
 }
